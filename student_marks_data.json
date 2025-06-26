@@ -1,0 +1,455 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Student_1",
+      "marks": {
+        "Mathematics": 77,
+        "Physics": 40,
+        "Chemistry": 34,
+        "Biology": 50
+      }
+    },
+    {
+      "id": 2,
+      "name": "Student_2",
+      "marks": {
+        "Mathematics": 37,
+        "Physics": 37,
+        "Chemistry": 42,
+        "Biology": 77
+      }
+    },
+    {
+      "id": 3,
+      "name": "Student_3",
+      "marks": {
+        "Mathematics": 62,
+        "Physics": 48,
+        "Chemistry": 41,
+        "Biology": 60
+      }
+    },
+    {
+      "id": 4,
+      "name": "Student_4",
+      "marks": {
+        "Mathematics": 34,
+        "Physics": 47,
+        "Chemistry": 28,
+        "Biology": 56
+      }
+    },
+    {
+      "id": 5,
+      "name": "Student_5",
+      "marks": {
+        "Mathematics": 72,
+        "Physics": 34,
+        "Chemistry": 37,
+        "Biology": 60
+      }
+    },
+    {
+      "id": 6,
+      "name": "Student_6",
+      "marks": {
+        "Mathematics": 44,
+        "Physics": 54,
+        "Chemistry": 44,
+        "Biology": 44
+      }
+    },
+    {
+      "id": 7,
+      "name": "Student_7",
+      "marks": {
+        "Mathematics": 55,
+        "Physics": 56,
+        "Chemistry": 48,
+        "Biology": 32
+      }
+    },
+    {
+      "id": 8,
+      "name": "Student_8",
+      "marks": {
+        "Mathematics": 64,
+        "Physics": 32,
+        "Chemistry": 39,
+        "Biology": 52
+      }
+    },
+    {
+      "id": 9,
+      "name": "Student_9",
+      "marks": {
+        "Mathematics": 19,
+        "Physics": 62,
+        "Chemistry": 21,
+        "Biology": 68
+      }
+    },
+    {
+      "id": 10,
+      "name": "Student_10",
+      "marks": {
+        "Mathematics": 51,
+        "Physics": 70,
+        "Chemistry": 52,
+        "Biology": 54
+      }
+    },
+    {
+      "id": 11,
+      "name": "Student_11",
+      "marks": {
+        "Mathematics": 44,
+        "Physics": 73,
+        "Chemistry": 63,
+        "Biology": 31
+      }
+    },
+    {
+      "id": 12,
+      "name": "Student_12",
+      "marks": {
+        "Mathematics": 74,
+        "Physics": 61,
+        "Chemistry": 56,
+        "Biology": 12
+      }
+    },
+    {
+      "id": 13,
+      "name": "Student_13",
+      "marks": {
+        "Mathematics": 50,
+        "Physics": 57,
+        "Chemistry": 51,
+        "Biology": 55
+      }
+    },
+    {
+      "id": 14,
+      "name": "Student_14",
+      "marks": {
+        "Mathematics": 26,
+        "Physics": 57,
+        "Chemistry": 63,
+        "Biology": 54
+      }
+    },
+    {
+      "id": 15,
+      "name": "Student_15",
+      "marks": {
+        "Mathematics": 79,
+        "Physics": 40,
+        "Chemistry": 50,
+        "Biology": 50
+      }
+    },
+    {
+      "id": 16,
+      "name": "Student_16",
+      "marks": {
+        "Mathematics": 66,
+        "Physics": 69,
+        "Chemistry": 26,
+        "Biology": 77
+      }
+    },
+    {
+      "id": 17,
+      "name": "Student_17",
+      "marks": {
+        "Mathematics": 39,
+        "Physics": 44,
+        "Chemistry": 55,
+        "Biology": 62
+      }
+    },
+    {
+      "id": 18,
+      "name": "Student_18",
+      "marks": {
+        "Mathematics": 51,
+        "Physics": 24,
+        "Chemistry": 39,
+        "Biology": 23
+      }
+    },
+    {
+      "id": 19,
+      "name": "Student_19",
+      "marks": {
+        "Mathematics": 63,
+        "Physics": 78,
+        "Chemistry": 30,
+        "Biology": 62
+      }
+    },
+    {
+      "id": 20,
+      "name": "Student_20",
+      "marks": {
+        "Mathematics": 23,
+        "Physics": 57,
+        "Chemistry": 46,
+        "Biology": 45
+      }
+    },
+    {
+      "id": 21,
+      "name": "Student_21",
+      "marks": {
+        "Mathematics": 47,
+        "Physics": 44,
+        "Chemistry": 54,
+        "Biology": 7
+      }
+    },
+    {
+      "id": 22,
+      "name": "Student_22",
+      "marks": {
+        "Mathematics": 34,
+        "Physics": 91,
+        "Chemistry": 56,
+        "Biology": 60
+      }
+    },
+    {
+      "id": 23,
+      "name": "Student_23",
+      "marks": {
+        "Mathematics": 67,
+        "Physics": 31,
+        "Chemistry": 6,
+        "Biology": 51
+      }
+    },
+    {
+      "id": 24,
+      "name": "Student_24",
+      "marks": {
+        "Mathematics": 62,
+        "Physics": 48,
+        "Chemistry": 71,
+        "Biology": 68
+      }
+    },
+    {
+      "id": 25,
+      "name": "Student_25",
+      "marks": {
+        "Mathematics": 25,
+        "Physics": 84,
+        "Chemistry": 68,
+        "Biology": 59
+      }
+    },
+    {
+      "id": 26,
+      "name": "Student_26",
+      "marks": {
+        "Mathematics": 81,
+        "Physics": 37,
+        "Chemistry": 25,
+        "Biology": 42
+      }
+    },
+    {
+      "id": 27,
+      "name": "Student_27",
+      "marks": {
+        "Mathematics": 36,
+        "Physics": 49,
+        "Chemistry": 68,
+        "Biology": 32
+      }
+    },
+    {
+      "id": 28,
+      "name": "Student_28",
+      "marks": {
+        "Mathematics": 55,
+        "Physics": 24,
+        "Chemistry": 38,
+        "Biology": 58
+      }
+    },
+    {
+      "id": 29,
+      "name": "Student_29",
+      "marks": {
+        "Mathematics": 50,
+        "Physics": 65,
+        "Chemistry": 50,
+        "Biology": 57
+      }
+    },
+    {
+      "id": 30,
+      "name": "Student_30",
+      "marks": {
+        "Mathematics": 62,
+        "Physics": 45,
+        "Chemistry": 63,
+        "Biology": 68
+      }
+    },
+    {
+      "id": 31,
+      "name": "Student_31",
+      "marks": {
+        "Mathematics": 74,
+        "Physics": 53,
+        "Chemistry": 49,
+        "Biology": 42
+      }
+    },
+    {
+      "id": 32,
+      "name": "Student_32",
+      "marks": {
+        "Mathematics": 68,
+        "Physics": 30,
+        "Chemistry": 70,
+        "Biology": 51
+      }
+    },
+    {
+      "id": 33,
+      "name": "Student_33",
+      "marks": {
+        "Mathematics": 26,
+        "Physics": 51,
+        "Chemistry": 40,
+        "Biology": 64
+      }
+    },
+    {
+      "id": 34,
+      "name": "Student_34",
+      "marks": {
+        "Mathematics": 49,
+        "Physics": 55,
+        "Chemistry": 40,
+        "Biology": 39
+      }
+    },
+    {
+      "id": 35,
+      "name": "Student_35",
+      "marks": {
+        "Mathematics": 61,
+        "Physics": 20,
+        "Chemistry": 76,
+        "Biology": 72
+      }
+    },
+    {
+      "id": 36,
+      "name": "Student_36",
+      "marks": {
+        "Mathematics": 47,
+        "Physics": 35,
+        "Chemistry": 31,
+        "Biology": 82
+      }
+    },
+    {
+      "id": 37,
+      "name": "Student_37",
+      "marks": {
+        "Mathematics": 30,
+        "Physics": 54,
+        "Chemistry": 64,
+        "Biology": 52
+      }
+    },
+    {
+      "id": 38,
+      "name": "Student_38",
+      "marks": {
+        "Mathematics": 20,
+        "Physics": 32,
+        "Chemistry": 11,
+        "Biology": 11
+      }
+    },
+    {
+      "id": 39,
+      "name": "Student_39",
+      "marks": {
+        "Mathematics": 71,
+        "Physics": 38,
+        "Chemistry": 51,
+        "Biology": 59
+      }
+    },
+    {
+      "id": 40,
+      "name": "Student_40",
+      "marks": {
+        "Mathematics": 61,
+        "Physics": 26,
+        "Chemistry": 61,
+        "Biology": 28
+      }
+    }
+  ],
+  "statistics": {
+    "above90": {
+      "total": 1,
+      "bySubject": {
+        "Mathematics": 0,
+        "Physics": 1,
+        "Chemistry": 0,
+        "Biology": 0
+      }
+    },
+    "below40": {
+      "total": 31,
+      "bySubject": {
+        "Mathematics": 12,
+        "Physics": 13,
+        "Chemistry": 13,
+        "Biology": 9
+      }
+    },
+    "distribution": {
+      "Mathematics": {
+        "0-20": 2,
+        "21-40": 10,
+        "41-60": 11,
+        "61-80": 16,
+        "81-100": 1
+      },
+      "Physics": {
+        "0-20": 1,
+        "21-40": 14,
+        "41-60": 16,
+        "61-80": 7,
+        "81-100": 2
+      },
+      "Chemistry": {
+        "0-20": 2,
+        "21-40": 13,
+        "41-60": 15,
+        "61-80": 10,
+        "81-100": 0
+      },
+      "Biology": {
+        "0-20": 3,
+        "21-40": 6,
+        "41-60": 21,
+        "61-80": 9,
+        "81-100": 1
+      }
+    }
+  },
+  "generatedAt": "2025-06-26T18:19:02.064Z"
+}
