@@ -12,7 +12,8 @@ function main() {
     const stats = calculateStatistics(students);
 
     console.log('\n📊 SUMMARY STATISTICS');
-    console.log(`Total students: 40`);
+    console.log('=====================');
+    console.log(`Total students: ${students.length}`);
     console.log(`Students with >90 marks: ${stats.above90.total}`);
     console.log(`Students with <40 marks: ${stats.below40.total}`);
 
@@ -26,24 +27,28 @@ function main() {
         console.log(`${subject}: ${count}`);
     });
 
-    const subjects = ['Mathematics', 'Physics', 'Chemistry', 'Biology'];
+    const subjects = ['Operating System', 'DBMS', 'Cyber Security', 'Theory of Computation'];
     subjects.forEach(subject => {
         createBarChart(stats.distribution[subject], `${subject} - Marks Distribution`);
     });
 
-    const html = generateHTMLReport(students, stats);
-    fs.writeFileSync('student_marks_report.html', html);
+    const htmlReport = generateHTMLReport(students, stats);
+    fs.writeFileSync('student_marks_report.html', htmlReport);
 
-    const json = {
+    const reportData = {
         students,
         statistics: stats,
         generatedAt: new Date().toISOString()
     };
-    fs.writeFileSync('student_marks_data.json', JSON.stringify(json, null, 2));
+    fs.writeFileSync('student_marks_data.json', JSON.stringify(reportData, null, 2));
 
-    console.log('\n✅ Files generated:');
+    console.log('\n✅ Analysis Complete!');
+    console.log('📄 Files generated:');
     console.log('   - student_marks_report.html');
     console.log('   - student_marks_data.json');
+    console.log('\n💡 Open student_marks_report.html in your browser to view interactive charts!');
 }
 
-main();
+if (require.main === module) {
+    main();
+}

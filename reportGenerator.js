@@ -1,7 +1,7 @@
 // reportGenerator.js
 
 function generateHTMLReport(students, stats) {
-    const subjects = ['Mathematics', 'Physics', 'Chemistry', 'Biology'];
+    const subjects = ['Operating System', 'DBMS', 'Cyber Security', 'Theory of Computation'];
 
     let html = `
 <!DOCTYPE html>
@@ -44,7 +44,7 @@ function generateHTMLReport(students, stats) {
             </div>
         </div>
         
-        <h2>Marks Distribution by Subject</h2>
+        <h2>Student-wise Total Marks (Stacked by Subject)</h2>
         <div class="chart-container">
             <canvas id="distributionChart"></canvas>
         </div>
@@ -61,10 +61,10 @@ function generateHTMLReport(students, stats) {
                     <tr>
                         <th>Student ID</th>
                         <th>Name</th>
-                        <th>Mathematics</th>
-                        <th>Physics</th>
-                        <th>Chemistry</th>
-                        <th>Biology</th>
+                        <th>Operating System</th>
+                        <th>DBMS</th>
+                        <th>Cyber Security</th>
+                        <th>Theory of Computation</th>
                         <th>Average</th>
                     </tr>
                 </thead>
@@ -96,36 +96,32 @@ function generateHTMLReport(students, stats) {
     </div>
 
     <script>
+        // Student-wise Total Marks Chart (Stacked by Subject)
         const ctx1 = document.getElementById('distributionChart').getContext('2d');
         new Chart(ctx1, {
             type: 'bar',
             data: {
-                labels: ['Mathematics', 'Physics', 'Chemistry', 'Biology'],
+                labels: ${JSON.stringify(students.map(s => s.name))},
                 datasets: [
                     {
-                        label: '0-20',
-                        data: [${subjects.map(s => stats.distribution[s]['0-20']).join(', ')}],
-                        backgroundColor: '#dc3545'
+                        label: 'Operating System',
+                        data: [${students.map(s => s.marks['Operating System']).join(', ')}],
+                        backgroundColor: '#007bff'
                     },
                     {
-                        label: '21-40',
-                        data: [${subjects.map(s => stats.distribution[s]['21-40']).join(', ')}],
-                        backgroundColor: '#fd7e14'
+                        label: 'DBMS',
+                        data: [${students.map(s => s.marks['DBMS']).join(', ')}],
+                        backgroundColor: '#28a745'
                     },
                     {
-                        label: '41-60',
-                        data: [${subjects.map(s => stats.distribution[s]['41-60']).join(', ')}],
+                        label: 'Cyber Security',
+                        data: [${students.map(s => s.marks['Cyber Security']).join(', ')}],
                         backgroundColor: '#ffc107'
                     },
                     {
-                        label: '61-80',
-                        data: [${subjects.map(s => stats.distribution[s]['61-80']).join(', ')}],
-                        backgroundColor: '#20c997'
-                    },
-                    {
-                        label: '81-100',
-                        data: [${subjects.map(s => stats.distribution[s]['81-100']).join(', ')}],
-                        backgroundColor: '#28a745'
+                        label: 'Theory of Computation',
+                        data: [${students.map(s => s.marks['Theory of Computation']).join(', ')}],
+                        backgroundColor: '#dc3545'
                     }
                 ]
             },
@@ -133,23 +129,43 @@ function generateHTMLReport(students, stats) {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                    x: { stacked: true },
-                    y: { stacked: true }
+                    x: {
+                        stacked: true,
+                        ticks: {
+                            autoSkip: false,
+                            maxRotation: 90,
+                            minRotation: 90
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        max: 400,
+                        title: {
+                            display: true,
+                            text: 'Total Marks (0–400)'
+                        }
+                    }
                 },
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Marks Distribution by Grade Ranges'
+                        text: 'Student-wise Total Marks (Stacked by Subject)'
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
                     }
                 }
             }
         });
 
+        // High/Low Performance Chart
         const ctx2 = document.getElementById('performanceChart').getContext('2d');
         new Chart(ctx2, {
             type: 'bar',
             data: {
-                labels: ['Mathematics', 'Physics', 'Chemistry', 'Biology'],
+                labels: ${JSON.stringify(subjects)},
                 datasets: [
                     {
                         label: 'Above 90 marks',

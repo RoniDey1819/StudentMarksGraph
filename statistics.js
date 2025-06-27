@@ -1,6 +1,6 @@
 // statistics.js
 function calculateStatistics(students) {
-    const subjects = ['Mathematics', 'Physics', 'Chemistry', 'Biology'];
+    const subjects = ['Operating System', 'DBMS', 'Cyber Security', 'Theory of Computation'];
     const stats = {
         above90: { total: 0, bySubject: {} },
         below40: { total: 0, bySubject: {} },
