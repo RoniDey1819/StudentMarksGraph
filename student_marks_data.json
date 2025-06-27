@@ -4,452 +4,451 @@
       "id": 1,
       "name": "Student_1",
       "marks": {
-        "Operating System": 45,
-        "DBMS": 55,
-        "Cyber Security": 50,
-        "Theory of Computation": 94
+        "Operating System": 97,
+        "DBMS": 74,
+        "Cyber Security": 77,
+        "Theory of Computation": 43
       }
     },
     {
       "id": 2,
       "name": "Student_2",
       "marks": {
-        "Operating System": 38,
-        "DBMS": 56,
-        "Cyber Security": 89,
-        "Theory of Computation": 58
+        "Operating System": 71,
+        "DBMS": 88,
+        "Cyber Security": 61,
+        "Theory of Computation": 70
       }
     },
     {
       "id": 3,
       "name": "Student_3",
       "marks": {
-        "Operating System": 65,
+        "Operating System": 88,
         "DBMS": 77,
-        "Cyber Security": 66,
-        "Theory of Computation": 81
+        "Cyber Security": 57,
+        "Theory of Computation": 75
       }
     },
     {
       "id": 4,
       "name": "Student_4",
       "marks": {
-        "Operating System": 68,
-        "DBMS": 70,
-        "Cyber Security": 49,
-        "Theory of Computation": 72
+        "Operating System": 65,
+        "DBMS": 36,
+        "Cyber Security": 56,
+        "Theory of Computation": 81
       }
     },
     {
       "id": 5,
       "name": "Student_5",
       "marks": {
-        "Operating System": 38,
-        "DBMS": 61,
+        "Operating System": 63,
+        "DBMS": 55,
         "Cyber Security": 74,
-        "Theory of Computation": 64
+        "Theory of Computation": 61
       }
     },
     {
       "id": 6,
       "name": "Student_6",
       "marks": {
-        "Operating System": 71,
-        "DBMS": 59,
-        "Cyber Security": 57,
-        "Theory of Computation": 60
+        "Operating System": 62,
+        "DBMS": 87,
+        "Cyber Security": 70,
+        "Theory of Computation": 73
       }
     },
     {
       "id": 7,
       "name": "Student_7",
       "marks": {
-        "Operating System": 39,
-        "DBMS": 49,
-        "Cyber Security": 64,
-        "Theory of Computation": 44
+        "Operating System": 62,
+        "DBMS": 65,
+        "Cyber Security": 46,
+        "Theory of Computation": 66
       }
     },
     {
       "id": 8,
       "name": "Student_8",
       "marks": {
-        "Operating System": 61,
-        "DBMS": 53,
-        "Cyber Security": 68,
-        "Theory of Computation": 33
+        "Operating System": 46,
+        "DBMS": 86,
+        "Cyber Security": 37,
+        "Theory of Computation": 31
       }
     },
     {
       "id": 9,
       "name": "Student_9",
       "marks": {
-        "Operating System": 83,
-        "DBMS": 55,
-        "Cyber Security": 33,
-        "Theory of Computation": 85
+        "Operating System": 94,
+        "DBMS": 67,
+        "Cyber Security": 78,
+        "Theory of Computation": 28
       }
     },
     {
       "id": 10,
       "name": "Student_10",
       "marks": {
-        "Operating System": 71,
-        "DBMS": 57,
-        "Cyber Security": 42,
-        "Theory of Computation": 93
+        "Operating System": 69,
+        "DBMS": 62,
+        "Cyber Security": 38,
+        "Theory of Computation": 59
       }
     },
     {
       "id": 11,
       "name": "Student_11",
       "marks": {
-        "Operating System": 71,
-        "DBMS": 50,
-        "Cyber Security": 79,
-        "Theory of Computation": 95
+        "Operating System": 52,
+        "DBMS": 54,
+        "Cyber Security": 100,
+        "Theory of Computation": 53
       }
     },
     {
       "id": 12,
       "name": "Student_12",
       "marks": {
-        "Operating System": 72,
-        "DBMS": 78,
-        "Cyber Security": 73,
-        "Theory of Computation": 33
+        "Operating System": 84,
+        "DBMS": 42,
+        "Cyber Security": 61,
+        "Theory of Computation": 42
       }
     },
     {
       "id": 13,
       "name": "Student_13",
       "marks": {
-        "Operating System": 80,
-        "DBMS": 48,
-        "Cyber Security": 78,
-        "Theory of Computation": 68
+        "Operating System": 100,
+        "DBMS": 37,
+        "Cyber Security": 55,
+        "Theory of Computation": 98
       }
     },
     {
       "id": 14,
       "name": "Student_14",
       "marks": {
-        "Operating System": 84,
-        "DBMS": 60,
+        "Operating System": 66,
+        "DBMS": 56,
         "Cyber Security": 72,
-        "Theory of Computation": 66
+        "Theory of Computation": 60
       }
     },
     {
       "id": 15,
       "name": "Student_15",
       "marks": {
-        "Operating System": 49,
-        "DBMS": 65,
-        "Cyber Security": 95,
-        "Theory of Computation": 86
+        "Operating System": 70,
+        "DBMS": 41,
+        "Cyber Security": 81,
+        "Theory of Computation": 79
       }
     },
     {
       "id": 16,
       "name": "Student_16",
       "marks": {
-        "Operating System": 71,
-        "DBMS": 74,
-        "Cyber Security": 86,
-        "Theory of Computation": 96
+        "Operating System": 74,
+        "DBMS": 86,
+        "Cyber Security": 88,
+        "Theory of Computation": 80
       }
     },
     {
       "id": 17,
       "name": "Student_17",
       "marks": {
-        "Operating System": 63,
-        "DBMS": 49,
-        "Cyber Security": 51,
-        "Theory of Computation": 60
+        "Operating System": 91,
+        "DBMS": 74,
+        "Cyber Security": 92,
+        "Theory of Computation": 96
       }
     },
     {
       "id": 18,
       "name": "Student_18",
       "marks": {
-        "Operating System": 51,
-        "DBMS": 76,
-        "Cyber Security": 35,
-        "Theory of Computation": 47
+        "Operating System": 68,
+        "DBMS": 71,
+        "Cyber Security": 75,
+        "Theory of Computation": 77
       }
     },
     {
       "id": 19,
       "name": "Student_19",
       "marks": {
-        "Operating System": 64,
-        "DBMS": 67,
-        "Cyber Security": 97,
-        "Theory of Computation": 41
+        "Operating System": 84,
+        "DBMS": 43,
+        "Cyber Security": 70,
+        "Theory of Computation": 47
       }
     },
     {
       "id": 20,
       "name": "Student_20",
       "marks": {
-        "Operating System": 56,
-        "DBMS": 77,
-        "Cyber Security": 84,
-        "Theory of Computation": 45
+        "Operating System": 42,
+        "DBMS": 64,
+        "Cyber Security": 23,
+        "Theory of Computation": 48
       }
     },
     {
       "id": 21,
       "name": "Student_21",
       "marks": {
-        "Operating System": 55,
-        "DBMS": 65,
-        "Cyber Security": 31,
-        "Theory of Computation": 30
+        "Operating System": 94,
+        "DBMS": 44,
+        "Cyber Security": 63,
+        "Theory of Computation": 55
       }
     },
     {
       "id": 22,
       "name": "Student_22",
       "marks": {
-        "Operating System": 56,
-        "DBMS": 84,
-        "Cyber Security": 51,
-        "Theory of Computation": 83
+        "Operating System": 31,
+        "DBMS": 51,
+        "Cyber Security": 45,
+        "Theory of Computation": 75
       }
     },
     {
       "id": 23,
       "name": "Student_23",
       "marks": {
-        "Operating System": 64,
-        "DBMS": 74,
-        "Cyber Security": 35,
-        "Theory of Computation": 96
+        "Operating System": 100,
+        "DBMS": 55,
+        "Cyber Security": 71,
+        "Theory of Computation": 52
       }
     },
     {
       "id": 24,
       "name": "Student_24",
       "marks": {
-        "Operating System": 33,
-        "DBMS": 66,
-        "Cyber Security": 46,
-        "Theory of Computation": 100
+        "Operating System": 58,
+        "DBMS": 57,
+        "Cyber Security": 61,
+        "Theory of Computation": 80
       }
     },
     {
       "id": 25,
       "name": "Student_25",
       "marks": {
-        "Operating System": 57,
-        "DBMS": 45,
-        "Cyber Security": 47,
-        "Theory of Computation": 91
+        "Operating System": 58,
+        "DBMS": 77,
+        "Cyber Security": 49,
+        "Theory of Computation": 45
       }
     },
     {
       "id": 26,
       "name": "Student_26",
       "marks": {
-        "Operating System": 19,
-        "DBMS": 61,
-        "Cyber Security": 21,
-        "Theory of Computation": 82
+        "Operating System": 52,
+        "DBMS": 34,
+        "Cyber Security": 79,
+        "Theory of Computation": 64
       }
     },
     {
       "id": 27,
       "name": "Student_27",
       "marks": {
-        "Operating System": 58,
-        "DBMS": 31,
-        "Cyber Security": 66,
-        "Theory of Computation": 87
+        "Operating System": 15,
+        "DBMS": 33,
+        "Cyber Security": 55,
+        "Theory of Computation": 52
       }
     },
     {
       "id": 28,
       "name": "Student_28",
       "marks": {
-        "Operating System": 45,
-        "DBMS": 58,
-        "Cyber Security": 73,
-        "Theory of Computation": 46
+        "Operating System": 90,
+        "DBMS": 65,
+        "Cyber Security": 64,
+        "Theory of Computation": 27
       }
     },
     {
       "id": 29,
       "name": "Student_29",
       "marks": {
-        "Operating System": 100,
-        "DBMS": 32,
-        "Cyber Security": 68,
-        "Theory of Computation": 55
+        "Operating System": 31,
+        "DBMS": 72,
+        "Cyber Security": 43,
+        "Theory of Computation": 33
       }
     },
     {
       "id": 30,
       "name": "Student_30",
       "marks": {
-        "Operating System": 68,
-        "DBMS": 50,
-        "Cyber Security": 42,
-        "Theory of Computation": 51
+        "Operating System": 78,
+        "DBMS": 32,
+        "Cyber Security": 71,
+        "Theory of Computation": 79
       }
     },
     {
       "id": 31,
       "name": "Student_31",
       "marks": {
-        "Operating System": 24,
-        "DBMS": 64,
-        "Cyber Security": 31,
-        "Theory of Computation": 78
+        "Operating System": 51,
+        "DBMS": 65,
+        "Cyber Security": 83,
+        "Theory of Computation": 84
       }
     },
     {
       "id": 32,
       "name": "Student_32",
       "marks": {
-        "Operating System": 76,
-        "DBMS": 61,
-        "Cyber Security": 73,
-        "Theory of Computation": 60
+        "Operating System": 80,
+        "DBMS": 89,
+        "Cyber Security": 64,
+        "Theory of Computation": 31
       }
     },
     {
       "id": 33,
       "name": "Student_33",
       "marks": {
-        "Operating System": 25,
-        "DBMS": 78,
-        "Cyber Security": 67,
-        "Theory of Computation": 57
+        "Operating System": 77,
+        "DBMS": 66,
+        "Cyber Security": 68,
+        "Theory of Computation": 80
       }
     },
     {
       "id": 34,
       "name": "Student_34",
       "marks": {
-        "Operating System": 44,
-        "DBMS": 54,
-        "Cyber Security": 70,
-        "Theory of Computation": 51
+        "Operating System": 16,
+        "DBMS": 50,
+        "Cyber Security": 75,
+        "Theory of Computation": 62
       }
     },
     {
       "id": 35,
       "name": "Student_35",
       "marks": {
-        "Operating System": 71,
-        "DBMS": 82,
-        "Cyber Security": 43,
-        "Theory of Computation": 39
+        "Operating System": 58,
+        "DBMS": 47,
+        "Cyber Security": 97,
+        "Theory of Computation": 30
       }
     },
     {
       "id": 36,
       "name": "Student_36",
       "marks": {
-        "Operating System": 47,
-        "DBMS": 58,
-        "Cyber Security": 72,
-        "Theory of Computation": 78
+        "Operating System": 46,
+        "DBMS": 56,
+        "Cyber Security": 82,
+        "Theory of Computation": 43
       }
     },
     {
       "id": 37,
       "name": "Student_37",
       "marks": {
-        "Operating System": 70,
-        "DBMS": 31,
-        "Cyber Security": 65,
-        "Theory of Computation": 38
+        "Operating System": 77,
+        "DBMS": 44,
+        "Cyber Security": 73,
+        "Theory of Computation": 66
       }
     },
     {
       "id": 38,
       "name": "Student_38",
       "marks": {
-        "Operating System": 55,
-        "DBMS": 86,
-        "Cyber Security": 77,
-        "Theory of Computation": 81
+        "Operating System": 58,
+        "DBMS": 51,
+        "Cyber Security": 37,
+        "Theory of Computation": 95
       }
     },
     {
       "id": 39,
       "name": "Student_39",
       "marks": {
-        "Operating System": 65,
-        "DBMS": 47,
-        "Cyber Security": 50,
-        "Theory of Computation": 81
+        "Operating System": 87,
+        "DBMS": 42,
+        "Cyber Security": 100,
+        "Theory of Computation": 83
       }
     },
     {
       "id": 40,
       "name": "Student_40",
       "marks": {
-        "Operating System": 81,
-        "DBMS": 60,
-        "Cyber Security": 45,
-        "Theory of Computation": 94
+        "Operating System": 53,
+        "DBMS": 89,
+        "Cyber Security": 69,
+        "Theory of Computation": 89
       }
     }
   ],
-  "statistics": {
+  "stats": {
     "above90": {
-      "total": 11,
+      "total": 10,
       "bySubject": {
-        "Operating System": 1,
+        "Operating System": 6,
         "DBMS": 0,
-        "Cyber Security": 2,
-        "Theory of Computation": 8
+        "Cyber Security": 4,
+        "Theory of Computation": 3
       }
     },
     "below40": {
-      "total": 17,
+      "total": 16,
       "bySubject": {
-        "Operating System": 7,
-        "DBMS": 3,
-        "Cyber Security": 6,
-        "Theory of Computation": 5
+        "Operating System": 4,
+        "DBMS": 5,
+        "Cyber Security": 4,
+        "Theory of Computation": 6
       }
     },
     "distribution": {
       "Operating System": {
-        "0-20": 1,
-        "21-40": 6,
-        "41-60": 12,
-        "61-80": 17,
-        "81-100": 4
+        "0-20": 2,
+        "21-40": 2,
+        "41-60": 11,
+        "61-80": 14,
+        "81-100": 11
       },
       "DBMS": {
         "0-20": 0,
-        "21-40": 3,
-        "41-60": 18,
-        "61-80": 16,
-        "81-100": 3
+        "21-40": 5,
+        "41-60": 16,
+        "61-80": 13,
+        "81-100": 6
       },
       "Cyber Security": {
         "0-20": 0,
-        "21-40": 6,
-        "41-60": 12,
-        "61-80": 17,
-        "81-100": 5
+        "21-40": 4,
+        "41-60": 8,
+        "61-80": 20,
+        "81-100": 8
       },
       "Theory of Computation": {
         "0-20": 0,
-        "21-40": 5,
-        "41-60": 13,
-        "61-80": 6,
-        "81-100": 16
+        "21-40": 6,
+        "41-60": 12,
+        "61-80": 15,
+        "81-100": 7
       }
     }
-  },
-  "generatedAt": "2025-06-27T00:05:20.750Z"
+  }
 }

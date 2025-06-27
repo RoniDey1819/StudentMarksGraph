@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Report</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Marks Distribution Analysis</h1>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>High Performers (>90)</h3>
+                <div class="stat-number">10</div>
+            </div>
+            <div class="stat-card">
+                <h3>Low Performers (<40)</h3>
+                <div class="stat-number">16</div>
+            </div>
+        </div>
+
+        <h2>Student-wise Total Marks (Stacked)</h2>
+        <div class="chart-container"><canvas id="distributionChart"></canvas></div>
+
+        <h2>Subject-wise High/Low Performers</h2>
+        <div class="chart-container"><canvas id="performanceChart"></canvas></div>
+
+        <h2>Detailed Marks Table</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr><th>ID</th><th>Name</th><th>Operating System</th><th>DBMS</th><th>Cyber Security</th><th>Theory of Computation</th><th>Average</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                            <td>1</td><td>Student_1</td>
+                            <td class="high-score">97</td><td class="">74</td><td class="">77</td><td class="">43</td>
+                            <td><strong>72.8</strong></td>
+                        </tr><tr>
+                            <td>2</td><td>Student_2</td>
+                            <td class="">71</td><td class="">88</td><td class="">61</td><td class="">70</td>
+                            <td><strong>72.5</strong></td>
+                        </tr><tr>
+                            <td>3</td><td>Student_3</td>
+                            <td class="">88</td><td class="">77</td><td class="">57</td><td class="">75</td>
+                            <td><strong>74.3</strong></td>
+                        </tr><tr>
+                            <td>4</td><td>Student_4</td>
+                            <td class="">65</td><td class="low-score">36</td><td class="">56</td><td class="">81</td>
+                            <td><strong>59.5</strong></td>
+                        </tr><tr>
+                            <td>5</td><td>Student_5</td>
+                            <td class="">63</td><td class="">55</td><td class="">74</td><td class="">61</td>
+                            <td><strong>63.3</strong></td>
+                        </tr><tr>
+                            <td>6</td><td>Student_6</td>
+                            <td class="">62</td><td class="">87</td><td class="">70</td><td class="">73</td>
+                            <td><strong>73.0</strong></td>
+                        </tr><tr>
+                            <td>7</td><td>Student_7</td>
+                            <td class="">62</td><td class="">65</td><td class="">46</td><td class="">66</td>
+                            <td><strong>59.8</strong></td>
+                        </tr><tr>
+                            <td>8</td><td>Student_8</td>
+                            <td class="">46</td><td class="">86</td><td class="low-score">37</td><td class="low-score">31</td>
+                            <td><strong>50.0</strong></td>
+                        </tr><tr>
+                            <td>9</td><td>Student_9</td>
+                            <td class="high-score">94</td><td class="">67</td><td class="">78</td><td class="low-score">28</td>
+                            <td><strong>66.8</strong></td>
+                        </tr><tr>
+                            <td>10</td><td>Student_10</td>
+                            <td class="">69</td><td class="">62</td><td class="low-score">38</td><td class="">59</td>
+                            <td><strong>57.0</strong></td>
+                        </tr><tr>
+                            <td>11</td><td>Student_11</td>
+                            <td class="">52</td><td class="">54</td><td class="high-score">100</td><td class="">53</td>
+                            <td><strong>64.8</strong></td>
+                        </tr><tr>
+                            <td>12</td><td>Student_12</td>
+                            <td class="">84</td><td class="">42</td><td class="">61</td><td class="">42</td>
+                            <td><strong>57.3</strong></td>
+                        </tr><tr>
+                            <td>13</td><td>Student_13</td>
+                            <td class="high-score">100</td><td class="low-score">37</td><td class="">55</td><td class="high-score">98</td>
+                            <td><strong>72.5</strong></td>
+                        </tr><tr>
+                            <td>14</td><td>Student_14</td>
+                            <td class="">66</td><td class="">56</td><td class="">72</td><td class="">60</td>
+                            <td><strong>63.5</strong></td>
+                        </tr><tr>
+                            <td>15</td><td>Student_15</td>
+                            <td class="">70</td><td class="">41</td><td class="">81</td><td class="">79</td>
+                            <td><strong>67.8</strong></td>
+                        </tr><tr>
+                            <td>16</td><td>Student_16</td>
+                            <td class="">74</td><td class="">86</td><td class="">88</td><td class="">80</td>
+                            <td><strong>82.0</strong></td>
+                        </tr><tr>
+                            <td>17</td><td>Student_17</td>
+                            <td class="high-score">91</td><td class="">74</td><td class="high-score">92</td><td class="high-score">96</td>
+                            <td><strong>88.3</strong></td>
+                        </tr><tr>
+                            <td>18</td><td>Student_18</td>
+                            <td class="">68</td><td class="">71</td><td class="">75</td><td class="">77</td>
+                            <td><strong>72.8</strong></td>
+                        </tr><tr>
+                            <td>19</td><td>Student_19</td>
+                            <td class="">84</td><td class="">43</td><td class="">70</td><td class="">47</td>
+                            <td><strong>61.0</strong></td>
+                        </tr><tr>
+                            <td>20</td><td>Student_20</td>
+                            <td class="">42</td><td class="">64</td><td class="low-score">23</td><td class="">48</td>
+                            <td><strong>44.3</strong></td>
+                        </tr><tr>
+                            <td>21</td><td>Student_21</td>
+                            <td class="high-score">94</td><td class="">44</td><td class="">63</td><td class="">55</td>
+                            <td><strong>64.0</strong></td>
+                        </tr><tr>
+                            <td>22</td><td>Student_22</td>
+                            <td class="low-score">31</td><td class="">51</td><td class="">45</td><td class="">75</td>
+                            <td><strong>50.5</strong></td>
+                        </tr><tr>
+                            <td>23</td><td>Student_23</td>
+                            <td class="high-score">100</td><td class="">55</td><td class="">71</td><td class="">52</td>
+                            <td><strong>69.5</strong></td>
+                        </tr><tr>
+                            <td>24</td><td>Student_24</td>
+                            <td class="">58</td><td class="">57</td><td class="">61</td><td class="">80</td>
+                            <td><strong>64.0</strong></td>
+                        </tr><tr>
+                            <td>25</td><td>Student_25</td>
+                            <td class="">58</td><td class="">77</td><td class="">49</td><td class="">45</td>
+                            <td><strong>57.3</strong></td>
+                        </tr><tr>
+                            <td>26</td><td>Student_26</td>
+                            <td class="">52</td><td class="low-score">34</td><td class="">79</td><td class="">64</td>
+                            <td><strong>57.3</strong></td>
+                        </tr><tr>
+                            <td>27</td><td>Student_27</td>
+                            <td class="low-score">15</td><td class="low-score">33</td><td class="">55</td><td class="">52</td>
+                            <td><strong>38.8</strong></td>
+                        </tr><tr>
+                            <td>28</td><td>Student_28</td>
+                            <td class="">90</td><td class="">65</td><td class="">64</td><td class="low-score">27</td>
+                            <td><strong>61.5</strong></td>
+                        </tr><tr>
+                            <td>29</td><td>Student_29</td>
+                            <td class="low-score">31</td><td class="">72</td><td class="">43</td><td class="low-score">33</td>
+                            <td><strong>44.8</strong></td>
+                        </tr><tr>
+                            <td>30</td><td>Student_30</td>
+                            <td class="">78</td><td class="low-score">32</td><td class="">71</td><td class="">79</td>
+                            <td><strong>65.0</strong></td>
+                        </tr><tr>
+                            <td>31</td><td>Student_31</td>
+                            <td class="">51</td><td class="">65</td><td class="">83</td><td class="">84</td>
+                            <td><strong>70.8</strong></td>
+                        </tr><tr>
+                            <td>32</td><td>Student_32</td>
+                            <td class="">80</td><td class="">89</td><td class="">64</td><td class="low-score">31</td>
+                            <td><strong>66.0</strong></td>
+                        </tr><tr>
+                            <td>33</td><td>Student_33</td>
+                            <td class="">77</td><td class="">66</td><td class="">68</td><td class="">80</td>
+                            <td><strong>72.8</strong></td>
+                        </tr><tr>
+                            <td>34</td><td>Student_34</td>
+                            <td class="low-score">16</td><td class="">50</td><td class="">75</td><td class="">62</td>
+                            <td><strong>50.8</strong></td>
+                        </tr><tr>
+                            <td>35</td><td>Student_35</td>
+                            <td class="">58</td><td class="">47</td><td class="high-score">97</td><td class="low-score">30</td>
+                            <td><strong>58.0</strong></td>
+                        </tr><tr>
+                            <td>36</td><td>Student_36</td>
+                            <td class="">46</td><td class="">56</td><td class="">82</td><td class="">43</td>
+                            <td><strong>56.8</strong></td>
+                        </tr><tr>
+                            <td>37</td><td>Student_37</td>
+                            <td class="">77</td><td class="">44</td><td class="">73</td><td class="">66</td>
+                            <td><strong>65.0</strong></td>
+                        </tr><tr>
+                            <td>38</td><td>Student_38</td>
+                            <td class="">58</td><td class="">51</td><td class="low-score">37</td><td class="high-score">95</td>
+                            <td><strong>60.3</strong></td>
+                        </tr><tr>
+                            <td>39</td><td>Student_39</td>
+                            <td class="">87</td><td class="">42</td><td class="high-score">100</td><td class="">83</td>
+                            <td><strong>78.0</strong></td>
+                        </tr><tr>
+                            <td>40</td><td>Student_40</td>
+                            <td class="">53</td><td class="">89</td><td class="">69</td><td class="">89</td>
+                            <td><strong>75.0</strong></td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        window.studentsData = [{"id":1,"name":"Student_1","marks":{"Operating System":97,"DBMS":74,"Cyber Security":77,"Theory of Computation":43}},{"id":2,"name":"Student_2","marks":{"Operating System":71,"DBMS":88,"Cyber Security":61,"Theory of Computation":70}},{"id":3,"name":"Student_3","marks":{"Operating System":88,"DBMS":77,"Cyber Security":57,"Theory of Computation":75}},{"id":4,"name":"Student_4","marks":{"Operating System":65,"DBMS":36,"Cyber Security":56,"Theory of Computation":81}},{"id":5,"name":"Student_5","marks":{"Operating System":63,"DBMS":55,"Cyber Security":74,"Theory of Computation":61}},{"id":6,"name":"Student_6","marks":{"Operating System":62,"DBMS":87,"Cyber Security":70,"Theory of Computation":73}},{"id":7,"name":"Student_7","marks":{"Operating System":62,"DBMS":65,"Cyber Security":46,"Theory of Computation":66}},{"id":8,"name":"Student_8","marks":{"Operating System":46,"DBMS":86,"Cyber Security":37,"Theory of Computation":31}},{"id":9,"name":"Student_9","marks":{"Operating System":94,"DBMS":67,"Cyber Security":78,"Theory of Computation":28}},{"id":10,"name":"Student_10","marks":{"Operating System":69,"DBMS":62,"Cyber Security":38,"Theory of Computation":59}},{"id":11,"name":"Student_11","marks":{"Operating System":52,"DBMS":54,"Cyber Security":100,"Theory of Computation":53}},{"id":12,"name":"Student_12","marks":{"Operating System":84,"DBMS":42,"Cyber Security":61,"Theory of Computation":42}},{"id":13,"name":"Student_13","marks":{"Operating System":100,"DBMS":37,"Cyber Security":55,"Theory of Computation":98}},{"id":14,"name":"Student_14","marks":{"Operating System":66,"DBMS":56,"Cyber Security":72,"Theory of Computation":60}},{"id":15,"name":"Student_15","marks":{"Operating System":70,"DBMS":41,"Cyber Security":81,"Theory of Computation":79}},{"id":16,"name":"Student_16","marks":{"Operating System":74,"DBMS":86,"Cyber Security":88,"Theory of Computation":80}},{"id":17,"name":"Student_17","marks":{"Operating System":91,"DBMS":74,"Cyber Security":92,"Theory of Computation":96}},{"id":18,"name":"Student_18","marks":{"Operating System":68,"DBMS":71,"Cyber Security":75,"Theory of Computation":77}},{"id":19,"name":"Student_19","marks":{"Operating System":84,"DBMS":43,"Cyber Security":70,"Theory of Computation":47}},{"id":20,"name":"Student_20","marks":{"Operating System":42,"DBMS":64,"Cyber Security":23,"Theory of Computation":48}},{"id":21,"name":"Student_21","marks":{"Operating System":94,"DBMS":44,"Cyber Security":63,"Theory of Computation":55}},{"id":22,"name":"Student_22","marks":{"Operating System":31,"DBMS":51,"Cyber Security":45,"Theory of Computation":75}},{"id":23,"name":"Student_23","marks":{"Operating System":100,"DBMS":55,"Cyber Security":71,"Theory of Computation":52}},{"id":24,"name":"Student_24","marks":{"Operating System":58,"DBMS":57,"Cyber Security":61,"Theory of Computation":80}},{"id":25,"name":"Student_25","marks":{"Operating System":58,"DBMS":77,"Cyber Security":49,"Theory of Computation":45}},{"id":26,"name":"Student_26","marks":{"Operating System":52,"DBMS":34,"Cyber Security":79,"Theory of Computation":64}},{"id":27,"name":"Student_27","marks":{"Operating System":15,"DBMS":33,"Cyber Security":55,"Theory of Computation":52}},{"id":28,"name":"Student_28","marks":{"Operating System":90,"DBMS":65,"Cyber Security":64,"Theory of Computation":27}},{"id":29,"name":"Student_29","marks":{"Operating System":31,"DBMS":72,"Cyber Security":43,"Theory of Computation":33}},{"id":30,"name":"Student_30","marks":{"Operating System":78,"DBMS":32,"Cyber Security":71,"Theory of Computation":79}},{"id":31,"name":"Student_31","marks":{"Operating System":51,"DBMS":65,"Cyber Security":83,"Theory of Computation":84}},{"id":32,"name":"Student_32","marks":{"Operating System":80,"DBMS":89,"Cyber Security":64,"Theory of Computation":31}},{"id":33,"name":"Student_33","marks":{"Operating System":77,"DBMS":66,"Cyber Security":68,"Theory of Computation":80}},{"id":34,"name":"Student_34","marks":{"Operating System":16,"DBMS":50,"Cyber Security":75,"Theory of Computation":62}},{"id":35,"name":"Student_35","marks":{"Operating System":58,"DBMS":47,"Cyber Security":97,"Theory of Computation":30}},{"id":36,"name":"Student_36","marks":{"Operating System":46,"DBMS":56,"Cyber Security":82,"Theory of Computation":43}},{"id":37,"name":"Student_37","marks":{"Operating System":77,"DBMS":44,"Cyber Security":73,"Theory of Computation":66}},{"id":38,"name":"Student_38","marks":{"Operating System":58,"DBMS":51,"Cyber Security":37,"Theory of Computation":95}},{"id":39,"name":"Student_39","marks":{"Operating System":87,"DBMS":42,"Cyber Security":100,"Theory of Computation":83}},{"id":40,"name":"Student_40","marks":{"Operating System":53,"DBMS":89,"Cyber Security":69,"Theory of Computation":89}}];
+        window.statsData = {"above90":{"total":10,"bySubject":{"Operating System":6,"DBMS":0,"Cyber Security":4,"Theory of Computation":3}},"below40":{"total":16,"bySubject":{"Operating System":4,"DBMS":5,"Cyber Security":4,"Theory of Computation":6}},"distribution":{"Operating System":{"0-20":2,"21-40":2,"41-60":11,"61-80":14,"81-100":11},"DBMS":{"0-20":0,"21-40":5,"41-60":16,"61-80":13,"81-100":6},"Cyber Security":{"0-20":0,"21-40":4,"41-60":8,"61-80":20,"81-100":8},"Theory of Computation":{"0-20":0,"21-40":6,"41-60":12,"61-80":15,"81-100":7}}};
+    </script>
+    <script src="./script.js"></script>
+</body>
+</html>

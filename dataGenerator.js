@@ -1,4 +1,3 @@
-// dataGenerator.js
 function generateMarks() {
     const students = [];
     const subjects = ['Operating System', 'DBMS', 'Cyber Security', 'Theory of Computation'];
@@ -11,14 +10,9 @@ function generateMarks() {
         };
 
         subjects.forEach(subject => {
-            const rand1 = Math.random();
-            const rand2 = Math.random();
-            const rand3 = Math.random();
-
-            let mark = Math.round((rand1 + rand2 + rand3) / 3 * 100);
-            mark += Math.round((Math.random() - 0.5) * 20) + 10;
+            let mark = Math.round((Math.random() + Math.random() + Math.random()) / 3 * 100);
+            mark += Math.round((Math.random() - 0.5) * 20) + 15;
             mark = Math.max(0, Math.min(100, mark));
-
             student.marks[subject] = mark;
         });
 

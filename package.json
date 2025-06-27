@@ -1,0 +1,19 @@
+{
+  "name": "studentmarksgraph",
+  "version": "1.0.0",
+  "description": "MSC Second Sem DBMS Assighnment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoniDey1819/StudentMarksGraph.git"
+  },
+  "author": "Roni Dey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoniDey1819/StudentMarksGraph/issues"
+  },
+  "homepage": "https://github.com/RoniDey1819/StudentMarksGraph#readme"
+}

@@ -1,4 +1,3 @@
-// statistics.js
 function calculateStatistics(students) {
     const subjects = ['Operating System', 'DBMS', 'Cyber Security', 'Theory of Computation'];
     const stats = {
@@ -21,6 +20,7 @@ function calculateStatistics(students) {
 
         subjects.forEach(subject => {
             const mark = student.marks[subject];
+
             if (mark > 90) {
                 stats.above90.bySubject[subject]++;
                 hasAbove90 = true;

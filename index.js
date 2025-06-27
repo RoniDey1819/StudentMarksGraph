@@ -1,8 +1,7 @@
-// index.js
-const fs = require('fs');
 const { generateMarks } = require('./dataGenerator');
 const { calculateStatistics } = require('./statistics');
 const { generateHTMLReport, createBarChart } = require('./reportGenerator');
+const fs = require('fs');
 
 function main() {
     console.log('🎓 Student Marks Distribution Analysis');
@@ -12,7 +11,6 @@ function main() {
     const stats = calculateStatistics(students);
 
     console.log('\n📊 SUMMARY STATISTICS');
-    console.log('=====================');
     console.log(`Total students: ${students.length}`);
     console.log(`Students with >90 marks: ${stats.above90.total}`);
     console.log(`Students with <40 marks: ${stats.below40.total}`);
@@ -32,23 +30,11 @@ function main() {
         createBarChart(stats.distribution[subject], `${subject} - Marks Distribution`);
     });
 
-    const htmlReport = generateHTMLReport(students, stats);
-    fs.writeFileSync('student_marks_report.html', htmlReport);
+    generateHTMLReport(students, stats);
 
-    const reportData = {
-        students,
-        statistics: stats,
-        generatedAt: new Date().toISOString()
-    };
-    fs.writeFileSync('student_marks_data.json', JSON.stringify(reportData, null, 2));
+    fs.writeFileSync('student_marks_data.json', JSON.stringify({ students, stats }, null, 2));
 
-    console.log('\n✅ Analysis Complete!');
-    console.log('📄 Files generated:');
-    console.log('   - student_marks_report.html');
-    console.log('   - student_marks_data.json');
-    console.log('\n💡 Open student_marks_report.html in your browser to view interactive charts!');
+    console.log('\n✅ Report generated at public/student_marks_report.html');
 }
 
-if (require.main === module) {
-    main();
-}
+main();
