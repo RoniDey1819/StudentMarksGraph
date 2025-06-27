@@ -1,77 +1,211 @@
-📊 Student Marks Distribution Graph
-A Node.js project that generates realistic random marks for 40 students across 4 subjects and provides a visual analysis using an HTML report with interactive charts (via Chart.js).
+# Student Marks Distribution Analysis
 
-🗂️ Project Structure
+A comprehensive Node.js application that generates synthetic student marks data and provides detailed statistical analysis with interactive visualizations.
 
-StudentMarksGraph/
-├── index.js                  # Main file to run the program
-├── dataGenerator.js         # Logic to generate marks
-├── statistics.js            # Calculates subject-wise and overall statistics
-├── reportGenerator.js       # Generates HTML report with charts
-├── student_marks_data.json  # Raw generated data (auto-created)
-├── public/
-│   ├── style.css            # CSS for the HTML report
-│   ├── script.js            # Chart.js rendering logic
-│   └── student_marks_report.html # Final report file (auto-created)
-📚 Subjects Included
-Each student is assigned marks (0–100) in the following 4 subjects:
+## 📊 Features
 
-Operating System
+- **Synthetic Data Generation**: Creates realistic student marks for 40 students across 4 subjects
+- **Statistical Analysis**: Calculates performance metrics and distribution patterns
+- **Interactive Visualizations**: Dynamic charts showing student performance and subject-wise analysis
+- **HTML Report Generation**: Beautiful, responsive web report with tables and charts
+- **Console Analytics**: Terminal-based bar charts and summary statistics
 
-DBMS
+## 🏫 Subjects Covered
 
-Cyber Security
+- Operating System
+- Database Management System (DBMS)
+- Cyber Security
+- Theory of Computation
 
-Theory of Computation
+## 🚀 Quick Start
 
-Total score per student: out of 400
+### Prerequisites
 
-🚀 How to Use
-1. Clone or download the project
-bash
-Copy
-Edit
-git clone https://github.com/RoniDey1819/StudentMarksGraph.git
-cd StudentMarksGraph
-2. Install Node.js if not already
-Download Node.js here
+- Node.js (v14 or higher)
+- npm
 
-3. Run the project
-bash
-Copy
-Edit
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd student-marks-analysis
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the application:
+```bash
 node index.js
-This will:
+```
 
-Generate random marks for 40 students
+### Output
 
-Calculate statistics
+The application generates:
+- **Console Output**: Summary statistics and ASCII bar charts
+- **HTML Report**: `public/student_marks_report.html` - Interactive web report
+- **JSON Data**: `student_marks_data.json` - Raw data for further analysis
 
-Generate a visual HTML report at:
-public/student_marks_report.html
+## 📁 Project Structure
 
-4. View the report
-Open public/student_marks_report.html in any browser.
+```
+student-marks-analysis/
+├── index.js                 # Main application entry point
+├── dataGenerator.js         # Synthetic data generation
+├── statistics.js            # Statistical calculations
+├── reportGenerator.js       # HTML report and chart generation
+├── student_marks_data.json  # Generated data output
+└── public/
+    ├── student_marks_report.html  # Generated HTML report
+    ├── style.css                  # Report styling
+    └── script.js                  # Client-side chart rendering
+```
 
-📈 Features
-Student-wise total marks with stacked bar chart
+## 🔧 Core Components
 
-Subject-wise performance (Above 90 & Below 40)
+### 1. Data Generator (`dataGenerator.js`)
+- Generates realistic marks using weighted random distribution
+- Ensures marks stay within 0-100 range
+- Creates 40 unique students with marks for all subjects
 
-Tabular view with highlights for high/low scores
+### 2. Statistics Calculator (`statistics.js`)
+- Tracks high performers (>90 marks) and low performers (<40 marks)
+- Creates mark distribution buckets (0-20, 21-40, 41-60, 61-80, 81-100)
+- Calculates both student-wise and subject-wise statistics
 
-Responsive layout using plain HTML/CSS
+### 3. Report Generator (`reportGenerator.js`)
+- Creates responsive HTML reports with embedded data
+- Generates ASCII bar charts for console output
+- Integrates Chart.js for interactive visualizations
 
-Interactive charts via Chart.js
+### 4. Main Application (`index.js`)
+- Orchestrates the entire analysis pipeline
+- Outputs comprehensive console statistics
+- Generates all reports and data files
 
-📦 Dependencies
-Chart.js – Included via CDN in the HTML file
+## 📈 Sample Output
 
-No need to install anything manually, as this project uses pure Node.js and browser-based scripts.
+### Console Statistics
+```
+🎓 Student Marks Distribution Analysis
+=====================================
 
-🛠️ Customization
-Want to change the number of students or subjects?
-Edit dataGenerator.js and update the subject list and mark logic.
+📊 SUMMARY STATISTICS
+Total students: 40
+Students with >90 marks: 10
+Students with <40 marks: 16
 
-📄 License
-This project is open-source and free to use for educational and demo purposes.
+📈 HIGH PERFORMERS BY SUBJECT:
+Operating System: 6
+DBMS: 0
+Cyber Security: 4
+Theory of Computation: 3
+
+📉 LOW PERFORMERS BY SUBJECT:
+Operating System: 4
+DBMS: 5
+Cyber Security: 4
+Theory of Computation: 6
+```
+
+### HTML Report Features
+- **Interactive Charts**: 
+  - Stacked bar chart showing student-wise total marks
+  - Comparative chart of high/low performers by subject
+- **Detailed Table**: All student marks with color-coded performance indicators
+- **Summary Cards**: Quick overview of key statistics
+- **Responsive Design**: Works on desktop and mobile devices
+
+## 🎨 Visual Elements
+
+### Color Coding
+- **Green Background**: High scores (>90)
+- **Red Background**: Low scores (<40)
+- **Blue Accents**: Primary UI elements
+- **Clean Layout**: Professional styling with cards and charts
+
+### Chart Types
+- **Stacked Bar Charts**: Student performance across all subjects
+- **Comparative Bar Charts**: High vs low performers by subject
+- **Distribution Analysis**: Mark ranges and frequency
+
+## 🔍 Analysis Insights
+
+The application provides insights into:
+- **Subject Difficulty**: Which subjects have more high/low performers
+- **Student Performance**: Individual and comparative analysis
+- **Mark Distribution**: Spread of marks across different ranges
+- **Performance Patterns**: Trends in student achievement
+
+## 📊 Data Format
+
+### Student Data Structure
+```json
+{
+  "id": 1,
+  "name": "Student_1",
+  "marks": {
+    "Operating System": 97,
+    "DBMS": 74,
+    "Cyber Security": 77,
+    "Theory of Computation": 43
+  }
+}
+```
+
+### Statistics Structure
+```json
+{
+  "above90": {
+    "total": 10,
+    "bySubject": { ... }
+  },
+  "below40": {
+    "total": 16,
+    "bySubject": { ... }
+  },
+  "distribution": { ... }
+}
+```
+
+## 🛠️ Customization
+
+### Modify Subjects
+Edit the `subjects` array in `dataGenerator.js` and other files:
+```javascript
+const subjects = ['Subject1', 'Subject2', 'Subject3', 'Subject4'];
+```
+
+### Adjust Student Count
+Change the loop limit in `dataGenerator.js`:
+```javascript
+for (let i = 1; i <= 50; i++) { // Change from 40 to 50
+```
+
+### Modify Mark Distribution
+Adjust the random generation algorithm in `generateMarks()` function for different distributions.
+
+## 🔧 Dependencies
+
+- **Chart.js**: Interactive chart rendering
+- **Node.js Built-ins**: `fs`, `path` for file operations
+- **HTML/CSS**: Responsive design and styling
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📞 Support
+
+For questions or support, please open an issue in the GitHub repository.
+
+---
+
+*Generated with ❤️ for educational analysis and visualization*
